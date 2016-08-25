@@ -36,6 +36,7 @@
 		04CA492E1D62F8BB004C2D7B /* SFSaveTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA492D1D62F8BB004C2D7B /* SFSaveTools.m */; };
 		04DE56FD1D6EE0B7003F44F1 /* SFSetteingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE56FC1D6EE0B7003F44F1 /* SFSetteingController.m */; };
 		04DE57001D6EE2B6003F44F1 /* SFSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE56FF1D6EE2B6003F44F1 /* SFSettingItem.m */; };
+		04DE57031D6F391E003F44F1 /* SFSettingGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57021D6F391E003F44F1 /* SFSettingGroupItem.m */; };
 		04F901011D448FFE00CCB15E /* SFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F901001D448FFE00CCB15E /* SFNavigationController.m */; };
 		04F901051D44A41800CCB15E /* UIImage+SFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F901041D44A41800CCB15E /* UIImage+SFImage.m */; };
 		04F901091D45133D00CCB15E /* SFCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F901081D45133D00CCB15E /* SFCover.m */; };
@@ -98,6 +99,8 @@
 		04DE56FC1D6EE0B7003F44F1 /* SFSetteingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSetteingController.m; sourceTree = "<group>"; };
 		04DE56FE1D6EE2B6003F44F1 /* SFSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSettingItem.h; sourceTree = "<group>"; };
 		04DE56FF1D6EE2B6003F44F1 /* SFSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSettingItem.m; sourceTree = "<group>"; };
+		04DE57011D6F391E003F44F1 /* SFSettingGroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSettingGroupItem.h; sourceTree = "<group>"; };
+		04DE57021D6F391E003F44F1 /* SFSettingGroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSettingGroupItem.m; sourceTree = "<group>"; };
 		04F900FF1D448FFE00CCB15E /* SFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFNavigationController.h; sourceTree = "<group>"; };
 		04F901001D448FFE00CCB15E /* SFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFNavigationController.m; sourceTree = "<group>"; };
 		04F901031D44A41800CCB15E /* UIImage+SFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SFImage.h"; sourceTree = "<group>"; };
@@ -497,6 +500,8 @@
 			children = (
 				04DE56FE1D6EE2B6003F44F1 /* SFSettingItem.h */,
 				04DE56FF1D6EE2B6003F44F1 /* SFSettingItem.m */,
+				04DE57011D6F391E003F44F1 /* SFSettingGroupItem.h */,
+				04DE57021D6F391E003F44F1 /* SFSettingGroupItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -594,6 +599,7 @@
 			files = (
 				0415DC4D1D43BC7F001E29CC /* SFDiscoverViewController.m in Sources */,
 				0415DC411D43BB27001E29CC /* SFTabBarController.m in Sources */,
+				04DE57031D6F391E003F44F1 /* SFSettingGroupItem.m in Sources */,
 				0415DC3D1D43BA70001E29CC /* AppDelegate.m in Sources */,
 				04CA472F1D5D934E004C2D7B /* UIView+SFFrame.m in Sources */,
 				04CA48BB1D5F5997004C2D7B /* SFTitleView.m in Sources */,

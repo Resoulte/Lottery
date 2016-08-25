@@ -8,6 +8,7 @@
 
 #import "SFSetteingController.h"
 #import "SFSettingItem.h"
+#import "SFSettingGroupItem.h"
 
 @interface SFSetteingController () <UITableViewDataSource>
 
@@ -46,15 +47,19 @@
     SFSettingItem *redeemCodem = [SFSettingItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
    // 当前组有多少行
     NSArray *item = @[redeemCodem];
-    [self.groupArray addObject:item];
+    SFSettingGroupItem *groupItem = [SFSettingGroupItem items:item];
+    groupItem.headTitle = @"abce";
+    
+    [self.groupArray addObject:groupItem];
 }
 
 - (void)group1 {
     
     SFSettingItem *redeemCodem = [SFSettingItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
-    // 当前组有多少行
     NSArray *item = @[redeemCodem];
-    [self.groupArray addObject:item];
+    SFSettingGroupItem *groupItem = [SFSettingGroupItem items:item];
+    
+    [self.groupArray addObject:groupItem];
 }
 
 - (void)group2 {
@@ -62,7 +67,9 @@
     SFSettingItem *redeemCodem = [SFSettingItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
     // 当前组有多少行
     NSArray *item = @[redeemCodem];
-    [self.groupArray addObject:item];
+    SFSettingGroupItem *groupItem = [SFSettingGroupItem items:item];
+    
+    [self.groupArray addObject:groupItem];
 }
 
 
@@ -74,8 +81,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // 取出时哪一组
-    NSArray *group = self.groupArray[section];
-    return group.count;
+    SFSettingGroupItem *groupItem = self.groupArray[section];
+    return groupItem.items.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -86,10 +93,10 @@
     }
     
     // 取出哪一组
-    NSArray *group = self.groupArray[indexPath.section];
+    SFSettingGroupItem *groupItem = self.groupArray[indexPath.section];
     
     // 取出哪一行
-    SFSettingItem *item = group[indexPath.row];
+    SFSettingItem *item = groupItem.items[indexPath.row];
     cell.imageView.image = item.iconImage;
     cell.textLabel.text = item.title;
     
@@ -98,7 +105,21 @@
 }
 
 // 返回头部标题
-
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    // 取出哪一组
+    SFSettingGroupItem *groupItem = self.groupArray[section];
+    
+    return groupItem.headTitle;
+        
+}
 
 // 返回尾部标题
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+    // 取出哪一组
+    SFSettingGroupItem *groupItem = self.groupArray[section];
+    
+    return groupItem.footTitle;
+}
+
+
 @end
