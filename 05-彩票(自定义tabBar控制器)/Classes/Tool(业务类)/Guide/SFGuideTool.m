@@ -33,9 +33,11 @@
             rootVC = [[SFTabBarController alloc] init];
         } else {
     // 有最新版本号，进入新特性界面，保存当前的版本号
-            rootVC = [[SFNewfeatureController alloc] init];
-            
-            [SFSaveTools setObject:curVersion forKey:SFVersionKey];
+//            rootVC = [[SFNewfeatureController alloc] init];
+//            
+//            [SFSaveTools setObject:curVersion forKey:SFVersionKey];
+            rootVC = [[SFTabBarController alloc] init];
+
         }
     
     return rootVC;
