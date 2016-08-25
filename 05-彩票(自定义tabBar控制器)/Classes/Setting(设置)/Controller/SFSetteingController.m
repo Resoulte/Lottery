@@ -7,12 +7,24 @@
 //
 
 #import "SFSetteingController.h"
+#import "SFSettingItem.h"
 
-@interface SFSetteingController ()
+@interface SFSetteingController () <UITableViewDataSource>
+
+/**记录所有数组总数*/
+@property (strong, nonatomic) NSMutableArray *groupArray;
 
 @end
 
 @implementation SFSetteingController
+
+- (NSMutableArray *)groupArray {
+
+    if (!_groupArray) {
+        _groupArray = [NSMutableArray array];
+    }
+    return _groupArray;
+}
 
 - (instancetype)init {
 
@@ -23,28 +35,70 @@
     [super viewDidLoad];
     
     self.title = @"设置";
+    [self group0];
+    [self group1];
+    [self group2];
     
 }
-#pragma mark - Table view data source
 
+- (void)group0 {
+
+    SFSettingItem *redeemCodem = [SFSettingItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+   // 当前组有多少行
+    NSArray *item = @[redeemCodem];
+    [self.groupArray addObject:item];
+}
+
+- (void)group1 {
+    
+    SFSettingItem *redeemCodem = [SFSettingItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    // 当前组有多少行
+    NSArray *item = @[redeemCodem];
+    [self.groupArray addObject:item];
+}
+
+- (void)group2 {
+    
+    SFSettingItem *redeemCodem = [SFSettingItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    // 当前组有多少行
+    NSArray *item = @[redeemCodem];
+    [self.groupArray addObject:item];
+}
+
+
+#pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    
+    return self.groupArray.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    // 取出时哪一组
+    NSArray *group = self.groupArray[section];
+    return group.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *ID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
+    }
     
-    // Configure the cell...
+    // 取出哪一组
+    NSArray *group = self.groupArray[indexPath.section];
+    
+    // 取出哪一行
+    SFSettingItem *item = group[indexPath.row];
+    cell.imageView.image = item.iconImage;
+    cell.textLabel.text = item.title;
     
     return cell;
+    
 }
-*/
 
+// 返回头部标题
+
+
+// 返回尾部标题
 @end
