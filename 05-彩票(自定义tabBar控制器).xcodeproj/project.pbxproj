@@ -50,6 +50,38 @@
 		04DE572C1D702AA2003F44F1 /* SFPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE572B1D702AA2003F44F1 /* SFPushViewController.m */; };
 		04DE572F1D703306003F44F1 /* SFScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE572E1D703306003F44F1 /* SFScoreViewController.m */; };
 		04DE57321D704265003F44F1 /* SFAwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57311D704265003F44F1 /* SFAwardViewController.m */; };
+		04DE57341D706869003F44F1 /* help.json in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57331D706869003F44F1 /* help.json */; };
+		04DE57531D706879003F44F1 /* bjdc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57361D706879003F44F1 /* bjdc_howto.html */; };
+		04DE57541D706879003F44F1 /* coupon_help.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57371D706879003F44F1 /* coupon_help.html */; };
+		04DE57551D706879003F44F1 /* credit_help.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57381D706879003F44F1 /* credit_help.html */; };
+		04DE57561D706879003F44F1 /* dlt_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57391D706879003F44F1 /* dlt_howto.html */; };
+		04DE57571D706879003F44F1 /* f9_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE573A1D706879003F44F1 /* f9_howto.html */; };
+		04DE57581D706879003F44F1 /* gdy11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE573B1D706879003F44F1 /* gdy11_howto.html */; };
+		04DE57591D706879003F44F1 /* group_record.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE573C1D706879003F44F1 /* group_record.html */; };
+		04DE575A1D706879003F44F1 /* help.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE573D1D706879003F44F1 /* help.html */; };
+		04DE575B1D706879003F44F1 /* helpGroupBuy.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE573E1D706879003F44F1 /* helpGroupBuy.html */; };
+		04DE575C1D706879003F44F1 /* jclq_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE573F1D706879003F44F1 /* jclq_howto.html */; };
+		04DE575D1D706879003F44F1 /* jczq_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57401D706879003F44F1 /* jczq_howto.html */; };
+		04DE575E1D706879003F44F1 /* jxssc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57411D706879003F44F1 /* jxssc_howto.html */; };
+		04DE575F1D706879003F44F1 /* jxy11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57421D706879003F44F1 /* jxy11_howto.html */; };
+		04DE57601D706879003F44F1 /* k2_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57431D706879003F44F1 /* k2_howto.html */; };
+		04DE57611D706879003F44F1 /* k3_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57441D706879003F44F1 /* k3_howto.html */; };
+		04DE57621D706879003F44F1 /* kl8_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57451D706879003F44F1 /* kl8_howto.html */; };
+		04DE57631D706879003F44F1 /* lk11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57461D706879003F44F1 /* lk11_howto.html */; };
+		04DE57641D706879003F44F1 /* networkconnectedfailed.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57471D706879003F44F1 /* networkconnectedfailed.html */; };
+		04DE57651D706879003F44F1 /* pl3_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57481D706879003F44F1 /* pl3_howto.html */; };
+		04DE57661D706879003F44F1 /* pl5_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57491D706879003F44F1 /* pl5_howto.html */; };
+		04DE57671D706879003F44F1 /* qlc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE574A1D706879003F44F1 /* qlc_howto.html */; };
+		04DE57681D706879003F44F1 /* qxc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE574B1D706879003F44F1 /* qxc_howto.html */; };
+		04DE57691D706879003F44F1 /* rule.css in Resources */ = {isa = PBXBuildFile; fileRef = 04DE574C1D706879003F44F1 /* rule.css */; };
+		04DE576A1D706879003F44F1 /* sfc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE574D1D706879003F44F1 /* sfc_howto.html */; };
+		04DE576B1D706879003F44F1 /* ssc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE574E1D706879003F44F1 /* ssc_howto.html */; };
+		04DE576C1D706879003F44F1 /* ssq_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE574F1D706879003F44F1 /* ssq_howto.html */; };
+		04DE576D1D706879003F44F1 /* x3d_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57501D706879003F44F1 /* x3d_howto.html */; };
+		04DE576E1D706879003F44F1 /* y11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57511D706879003F44F1 /* y11_howto.html */; };
+		04DE576F1D706879003F44F1 /* znzh.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57521D706879003F44F1 /* znzh.html */; };
+		04DE57761D7068EA003F44F1 /* SFHelpItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57751D7068EA003F44F1 /* SFHelpItem.m */; };
+		04DE57791D7069C1003F44F1 /* SFSettingHelpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57781D7069C1003F44F1 /* SFSettingHelpController.m */; };
 		04F901011D448FFE00CCB15E /* SFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F901001D448FFE00CCB15E /* SFNavigationController.m */; };
 		04F901051D44A41800CCB15E /* UIImage+SFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F901041D44A41800CCB15E /* UIImage+SFImage.m */; };
 		04F901091D45133D00CCB15E /* SFCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F901081D45133D00CCB15E /* SFCover.m */; };
@@ -139,6 +171,40 @@
 		04DE572E1D703306003F44F1 /* SFScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFScoreViewController.m; sourceTree = "<group>"; };
 		04DE57301D704265003F44F1 /* SFAwardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAwardViewController.h; sourceTree = "<group>"; };
 		04DE57311D704265003F44F1 /* SFAwardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAwardViewController.m; sourceTree = "<group>"; };
+		04DE57331D706869003F44F1 /* help.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = help.json; sourceTree = "<group>"; };
+		04DE57361D706879003F44F1 /* bjdc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bjdc_howto.html; sourceTree = "<group>"; };
+		04DE57371D706879003F44F1 /* coupon_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = coupon_help.html; sourceTree = "<group>"; };
+		04DE57381D706879003F44F1 /* credit_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credit_help.html; sourceTree = "<group>"; };
+		04DE57391D706879003F44F1 /* dlt_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dlt_howto.html; sourceTree = "<group>"; };
+		04DE573A1D706879003F44F1 /* f9_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = f9_howto.html; sourceTree = "<group>"; };
+		04DE573B1D706879003F44F1 /* gdy11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = gdy11_howto.html; sourceTree = "<group>"; };
+		04DE573C1D706879003F44F1 /* group_record.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = group_record.html; sourceTree = "<group>"; };
+		04DE573D1D706879003F44F1 /* help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = help.html; sourceTree = "<group>"; };
+		04DE573E1D706879003F44F1 /* helpGroupBuy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = helpGroupBuy.html; sourceTree = "<group>"; };
+		04DE573F1D706879003F44F1 /* jclq_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jclq_howto.html; sourceTree = "<group>"; };
+		04DE57401D706879003F44F1 /* jczq_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jczq_howto.html; sourceTree = "<group>"; };
+		04DE57411D706879003F44F1 /* jxssc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jxssc_howto.html; sourceTree = "<group>"; };
+		04DE57421D706879003F44F1 /* jxy11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jxy11_howto.html; sourceTree = "<group>"; };
+		04DE57431D706879003F44F1 /* k2_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = k2_howto.html; sourceTree = "<group>"; };
+		04DE57441D706879003F44F1 /* k3_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = k3_howto.html; sourceTree = "<group>"; };
+		04DE57451D706879003F44F1 /* kl8_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = kl8_howto.html; sourceTree = "<group>"; };
+		04DE57461D706879003F44F1 /* lk11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = lk11_howto.html; sourceTree = "<group>"; };
+		04DE57471D706879003F44F1 /* networkconnectedfailed.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = networkconnectedfailed.html; sourceTree = "<group>"; };
+		04DE57481D706879003F44F1 /* pl3_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pl3_howto.html; sourceTree = "<group>"; };
+		04DE57491D706879003F44F1 /* pl5_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pl5_howto.html; sourceTree = "<group>"; };
+		04DE574A1D706879003F44F1 /* qlc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = qlc_howto.html; sourceTree = "<group>"; };
+		04DE574B1D706879003F44F1 /* qxc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = qxc_howto.html; sourceTree = "<group>"; };
+		04DE574C1D706879003F44F1 /* rule.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = rule.css; sourceTree = "<group>"; };
+		04DE574D1D706879003F44F1 /* sfc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sfc_howto.html; sourceTree = "<group>"; };
+		04DE574E1D706879003F44F1 /* ssc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ssc_howto.html; sourceTree = "<group>"; };
+		04DE574F1D706879003F44F1 /* ssq_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ssq_howto.html; sourceTree = "<group>"; };
+		04DE57501D706879003F44F1 /* x3d_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = x3d_howto.html; sourceTree = "<group>"; };
+		04DE57511D706879003F44F1 /* y11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = y11_howto.html; sourceTree = "<group>"; };
+		04DE57521D706879003F44F1 /* znzh.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = znzh.html; sourceTree = "<group>"; };
+		04DE57741D7068EA003F44F1 /* SFHelpItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHelpItem.h; sourceTree = "<group>"; };
+		04DE57751D7068EA003F44F1 /* SFHelpItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHelpItem.m; sourceTree = "<group>"; };
+		04DE57771D7069C1003F44F1 /* SFSettingHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSettingHelpController.h; sourceTree = "<group>"; };
+		04DE57781D7069C1003F44F1 /* SFSettingHelpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSettingHelpController.m; sourceTree = "<group>"; };
 		04F900FF1D448FFE00CCB15E /* SFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFNavigationController.h; sourceTree = "<group>"; };
 		04F901001D448FFE00CCB15E /* SFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFNavigationController.m; sourceTree = "<group>"; };
 		04F901031D44A41800CCB15E /* UIImage+SFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SFImage.h"; sourceTree = "<group>"; };
@@ -448,6 +514,8 @@
 				0415DC3A1D43BA70001E29CC /* AppDelegate.h */,
 				0415DC3B1D43BA70001E29CC /* AppDelegate.m */,
 				0415DC3C1D43BA70001E29CC /* main.m */,
+				04DE57351D706879003F44F1 /* Html */,
+				04DE57331D706869003F44F1 /* help.json */,
 				04F901061D44A67200CCB15E /* 彩票.pch */,
 			);
 			path = Other;
@@ -518,6 +586,7 @@
 		04CA492F1D62FC4D004C2D7B /* Setting(设置) */ = {
 			isa = PBXGroup;
 			children = (
+				04DE57701D7068D7003F44F1 /* Help(帮助) */,
 				04DE57261D702A6C003F44F1 /* Push(推送) */,
 				04CA49301D62FC4D004C2D7B /* Controller */,
 				04CA49311D62FC4D004C2D7B /* Model */,
@@ -648,6 +717,77 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		04DE57351D706879003F44F1 /* Html */ = {
+			isa = PBXGroup;
+			children = (
+				04DE57361D706879003F44F1 /* bjdc_howto.html */,
+				04DE57371D706879003F44F1 /* coupon_help.html */,
+				04DE57381D706879003F44F1 /* credit_help.html */,
+				04DE57391D706879003F44F1 /* dlt_howto.html */,
+				04DE573A1D706879003F44F1 /* f9_howto.html */,
+				04DE573B1D706879003F44F1 /* gdy11_howto.html */,
+				04DE573C1D706879003F44F1 /* group_record.html */,
+				04DE573D1D706879003F44F1 /* help.html */,
+				04DE573E1D706879003F44F1 /* helpGroupBuy.html */,
+				04DE573F1D706879003F44F1 /* jclq_howto.html */,
+				04DE57401D706879003F44F1 /* jczq_howto.html */,
+				04DE57411D706879003F44F1 /* jxssc_howto.html */,
+				04DE57421D706879003F44F1 /* jxy11_howto.html */,
+				04DE57431D706879003F44F1 /* k2_howto.html */,
+				04DE57441D706879003F44F1 /* k3_howto.html */,
+				04DE57451D706879003F44F1 /* kl8_howto.html */,
+				04DE57461D706879003F44F1 /* lk11_howto.html */,
+				04DE57471D706879003F44F1 /* networkconnectedfailed.html */,
+				04DE57481D706879003F44F1 /* pl3_howto.html */,
+				04DE57491D706879003F44F1 /* pl5_howto.html */,
+				04DE574A1D706879003F44F1 /* qlc_howto.html */,
+				04DE574B1D706879003F44F1 /* qxc_howto.html */,
+				04DE574C1D706879003F44F1 /* rule.css */,
+				04DE574D1D706879003F44F1 /* sfc_howto.html */,
+				04DE574E1D706879003F44F1 /* ssc_howto.html */,
+				04DE574F1D706879003F44F1 /* ssq_howto.html */,
+				04DE57501D706879003F44F1 /* x3d_howto.html */,
+				04DE57511D706879003F44F1 /* y11_howto.html */,
+				04DE57521D706879003F44F1 /* znzh.html */,
+			);
+			path = Html;
+			sourceTree = "<group>";
+		};
+		04DE57701D7068D7003F44F1 /* Help(帮助) */ = {
+			isa = PBXGroup;
+			children = (
+				04DE57711D7068D7003F44F1 /* Controller */,
+				04DE57721D7068D7003F44F1 /* Model */,
+				04DE57731D7068D7003F44F1 /* View */,
+			);
+			path = "Help(帮助)";
+			sourceTree = "<group>";
+		};
+		04DE57711D7068D7003F44F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04DE57771D7069C1003F44F1 /* SFSettingHelpController.h */,
+				04DE57781D7069C1003F44F1 /* SFSettingHelpController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04DE57721D7068D7003F44F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04DE57741D7068EA003F44F1 /* SFHelpItem.h */,
+				04DE57751D7068EA003F44F1 /* SFHelpItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04DE57731D7068D7003F44F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		04F901021D44A3F300CCB15E /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -717,12 +857,42 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DE576D1D706879003F44F1 /* x3d_howto.html in Resources */,
+				04DE575F1D706879003F44F1 /* jxy11_howto.html in Resources */,
+				04DE57671D706879003F44F1 /* qlc_howto.html in Resources */,
+				04DE576E1D706879003F44F1 /* y11_howto.html in Resources */,
 				0415DC191D43AF92001E29CC /* LaunchScreen.storyboard in Resources */,
+				04DE57601D706879003F44F1 /* k2_howto.html in Resources */,
+				04DE57631D706879003F44F1 /* lk11_howto.html in Resources */,
+				04DE57651D706879003F44F1 /* pl3_howto.html in Resources */,
+				04DE575A1D706879003F44F1 /* help.html in Resources */,
 				04CA48B21D5F42E4004C2D7B /* SFDiscoverViewController.storyboard in Resources */,
+				04DE57681D706879003F44F1 /* qxc_howto.html in Resources */,
 				04CA48C01D5F78BC004C2D7B /* SFMyLotteryViewController.xib in Resources */,
+				04DE576B1D706879003F44F1 /* ssc_howto.html in Resources */,
+				04DE57591D706879003F44F1 /* group_record.html in Resources */,
+				04DE57691D706879003F44F1 /* rule.css in Resources */,
 				0415DC161D43AF92001E29CC /* Assets.xcassets in Resources */,
+				04DE57621D706879003F44F1 /* kl8_howto.html in Resources */,
+				04DE57661D706879003F44F1 /* pl5_howto.html in Resources */,
+				04DE576C1D706879003F44F1 /* ssq_howto.html in Resources */,
 				04F9010E1D451A3000CCB15E /* SFActiveMenue.xib in Resources */,
+				04DE57531D706879003F44F1 /* bjdc_howto.html in Resources */,
+				04DE57551D706879003F44F1 /* credit_help.html in Resources */,
 				04DE571E1D6FD2F9003F44F1 /* MBProgressHUD.bundle in Resources */,
+				04DE575B1D706879003F44F1 /* helpGroupBuy.html in Resources */,
+				04DE57341D706869003F44F1 /* help.json in Resources */,
+				04DE575D1D706879003F44F1 /* jczq_howto.html in Resources */,
+				04DE575C1D706879003F44F1 /* jclq_howto.html in Resources */,
+				04DE575E1D706879003F44F1 /* jxssc_howto.html in Resources */,
+				04DE57541D706879003F44F1 /* coupon_help.html in Resources */,
+				04DE57611D706879003F44F1 /* k3_howto.html in Resources */,
+				04DE57561D706879003F44F1 /* dlt_howto.html in Resources */,
+				04DE576A1D706879003F44F1 /* sfc_howto.html in Resources */,
+				04DE57581D706879003F44F1 /* gdy11_howto.html in Resources */,
+				04DE57571D706879003F44F1 /* f9_howto.html in Resources */,
+				04DE576F1D706879003F44F1 /* znzh.html in Resources */,
+				04DE57641D706879003F44F1 /* networkconnectedfailed.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,11 +931,13 @@
 				04CA491C1D61DD65004C2D7B /* SFNewfeatureController.m in Sources */,
 				04DE571F1D6FD2F9003F44F1 /* MBProgressHUD.m in Sources */,
 				04DE570C1D6F47EF003F44F1 /* SFSettingCell.m in Sources */,
+				04DE57791D7069C1003F44F1 /* SFSettingHelpController.m in Sources */,
 				04DE57061D6F4760003F44F1 /* SFSettingArrowItem.m in Sources */,
 				04DE572F1D703306003F44F1 /* SFScoreViewController.m in Sources */,
 				04C8581B1D46EA3100CD6E0A /* SFMenueItem.m in Sources */,
 				04CA491F1D61EDC1004C2D7B /* SFNewfeatureCell.m in Sources */,
 				04CA49271D62F698004C2D7B /* SFGuideTool.m in Sources */,
+				04DE57761D7068EA003F44F1 /* SFHelpItem.m in Sources */,
 				04F901091D45133D00CCB15E /* SFCover.m in Sources */,
 				0415DC501D43BC98001E29CC /* SFHistoryViewController.m in Sources */,
 				0415DC141D43AF92001E29CC /* _5_______tabBar____.xcdatamodeld in Sources */,

@@ -13,6 +13,7 @@
 #import "SFBlurView.h"
 #import "MBProgressHUD+XMG.h"
 #import "SFPushViewController.h"
+#import "SFSettingHelpController.h"
 
 @interface SFSetteingController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -31,6 +32,16 @@
     [self group0];
     [self group1];
     [self group2];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"常见问题" style:UIBarButtonItemStyleDone target:self action:@selector(help)];
+    
+}
+
+- (void)help {
+    
+    SFSettingHelpController *help = [[SFSettingHelpController alloc] init];
+    help.title = @"帮助";
+    [self.navigationController pushViewController:help animated:YES];
     
 }
 
