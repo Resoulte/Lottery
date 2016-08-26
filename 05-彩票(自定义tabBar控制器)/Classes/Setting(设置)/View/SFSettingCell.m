@@ -47,6 +47,7 @@
     
     self.imageView.image = _item.iconImage;
     self.textLabel.text = _item.title;
+    self.detailTextLabel.text = _item.subTitle;
 }
 
 // 辅助视图
@@ -56,11 +57,15 @@
     if ([_item isKindOfClass:[SFSettingArrowItem class]]) {
         // 设置箭头
         self.accessoryView = self.arrowImage;
+        self.selectionStyle = UITableViewCellSelectionStyleDefault;
     } else if ([_item isKindOfClass:[SFSettingSwitchItem class]]) {
         // 设置开关
         self.accessoryView = self.AccessorySwitch;
+        // switch 不需要被选中 , 设置之后其他的需要还原为默认
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
     } else {
         self.accessoryView = nil;
+        self.selectionStyle = UITableViewCellSelectionStyleDefault;
     }
     
 }

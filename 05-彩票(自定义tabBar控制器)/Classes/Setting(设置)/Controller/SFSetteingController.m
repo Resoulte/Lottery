@@ -22,10 +22,7 @@
 @implementation SFSetteingController
 
 
-- (instancetype)init {
 
-    return [super initWithStyle:UITableViewStyleGrouped];
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -68,7 +65,7 @@
     
     SFSettingArrowItem *version = [SFSettingArrowItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"检查新版本"];
     
-    version.cellOperationBlock = ^(){
+    version.cellOperationBlock = ^(NSIndexPath *indexPath){
         // 高斯模糊效果
         SFBlurView *blur = [[SFBlurView alloc] initWithFrame:SFScreenBounds];
         [SFKeyWindow addSubview:blur];

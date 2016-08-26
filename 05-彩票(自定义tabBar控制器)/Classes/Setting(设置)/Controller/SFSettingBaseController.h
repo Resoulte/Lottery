@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SFSettingSwitchItem.h"
+#import "SFSettingGroupItem.h"
+#import "SFSettingArrowItem.h"
+#import "SFSettingSwitchItem.h"
+#import "SFSettingCell.h"
 
 @interface SFSettingBaseController : UITableViewController
 

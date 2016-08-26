@@ -48,6 +48,8 @@
 		04DE57221D70239B003F44F1 /* SFBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57211D70239B003F44F1 /* SFBlurView.m */; };
 		04DE57251D702786003F44F1 /* SFSettingBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57241D702786003F44F1 /* SFSettingBaseController.m */; };
 		04DE572C1D702AA2003F44F1 /* SFPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE572B1D702AA2003F44F1 /* SFPushViewController.m */; };
+		04DE572F1D703306003F44F1 /* SFScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE572E1D703306003F44F1 /* SFScoreViewController.m */; };
+		04DE57321D704265003F44F1 /* SFAwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57311D704265003F44F1 /* SFAwardViewController.m */; };
 		04F901011D448FFE00CCB15E /* SFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F901001D448FFE00CCB15E /* SFNavigationController.m */; };
 		04F901051D44A41800CCB15E /* UIImage+SFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F901041D44A41800CCB15E /* UIImage+SFImage.m */; };
 		04F901091D45133D00CCB15E /* SFCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F901081D45133D00CCB15E /* SFCover.m */; };
@@ -133,6 +135,10 @@
 		04DE57241D702786003F44F1 /* SFSettingBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSettingBaseController.m; sourceTree = "<group>"; };
 		04DE572A1D702AA2003F44F1 /* SFPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPushViewController.h; sourceTree = "<group>"; };
 		04DE572B1D702AA2003F44F1 /* SFPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPushViewController.m; sourceTree = "<group>"; };
+		04DE572D1D703306003F44F1 /* SFScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFScoreViewController.h; sourceTree = "<group>"; };
+		04DE572E1D703306003F44F1 /* SFScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFScoreViewController.m; sourceTree = "<group>"; };
+		04DE57301D704265003F44F1 /* SFAwardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAwardViewController.h; sourceTree = "<group>"; };
+		04DE57311D704265003F44F1 /* SFAwardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAwardViewController.m; sourceTree = "<group>"; };
 		04F900FF1D448FFE00CCB15E /* SFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFNavigationController.h; sourceTree = "<group>"; };
 		04F901001D448FFE00CCB15E /* SFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFNavigationController.m; sourceTree = "<group>"; };
 		04F901031D44A41800CCB15E /* UIImage+SFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SFImage.h"; sourceTree = "<group>"; };
@@ -620,6 +626,10 @@
 			children = (
 				04DE572A1D702AA2003F44F1 /* SFPushViewController.h */,
 				04DE572B1D702AA2003F44F1 /* SFPushViewController.m */,
+				04DE572D1D703306003F44F1 /* SFScoreViewController.h */,
+				04DE572E1D703306003F44F1 /* SFScoreViewController.m */,
+				04DE57301D704265003F44F1 /* SFAwardViewController.h */,
+				04DE57311D704265003F44F1 /* SFAwardViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -744,6 +754,7 @@
 				04DE57251D702786003F44F1 /* SFSettingBaseController.m in Sources */,
 				0415DC3E1D43BA70001E29CC /* main.m in Sources */,
 				04DE57001D6EE2B6003F44F1 /* SFSettingItem.m in Sources */,
+				04DE57321D704265003F44F1 /* SFAwardViewController.m in Sources */,
 				0415DC571D43C8D8001E29CC /* SFTabBar.m in Sources */,
 				04CA48B81D5F592C004C2D7B /* SFLuckyViewController.m in Sources */,
 				04DE56FD1D6EE0B7003F44F1 /* SFSetteingController.m in Sources */,
@@ -751,6 +762,7 @@
 				04DE571F1D6FD2F9003F44F1 /* MBProgressHUD.m in Sources */,
 				04DE570C1D6F47EF003F44F1 /* SFSettingCell.m in Sources */,
 				04DE57061D6F4760003F44F1 /* SFSettingArrowItem.m in Sources */,
+				04DE572F1D703306003F44F1 /* SFScoreViewController.m in Sources */,
 				04C8581B1D46EA3100CD6E0A /* SFMenueItem.m in Sources */,
 				04CA491F1D61EDC1004C2D7B /* SFNewfeatureCell.m in Sources */,
 				04CA49271D62F698004C2D7B /* SFGuideTool.m in Sources */,

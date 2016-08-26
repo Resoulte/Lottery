@@ -7,10 +7,8 @@
 
 
 #import "SFSettingBaseController.h"
-#import "SFSettingSwitchItem.h"
-#import "SFSettingGroupItem.h"
-#import "SFSettingArrowItem.h"
-#import "SFSettingCell.h"
+
+
 
 
 @interface SFSettingBaseController () <UITableViewDelegate, UITableViewDataSource>
@@ -28,6 +26,10 @@
     return _groupArray;
 }
 
+- (instancetype)init {
+    
+    return [super initWithStyle:UITableViewStyleGrouped];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -87,7 +89,8 @@
     SFSettingGroupItem *groupItem = self.groupArray[indexPath.section];
     SFSettingItem *item = groupItem.items[indexPath.row];
     if (item.cellOperationBlock) {
-        item.cellOperationBlock();
+        item.cellOperationBlock(indexPath);
+        return ;
     }
     
     if ([item isKindOfClass:[SFSettingArrowItem class]]) {
@@ -96,8 +99,9 @@
             // 才需要跳转
             // 创建跳转控制器
             UIViewController *vc = [[arrowItem.destVC alloc] init];
+            
             vc.title = item.title;
-//            vc.view.backgroundColor = [UIColor redColor];
+            
             [self.navigationController pushViewController:vc animated:YES];
             
         }
