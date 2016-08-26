@@ -46,6 +46,8 @@
 		04DE571E1D6FD2F9003F44F1 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57181D6FD2F9003F44F1 /* MBProgressHUD.bundle */; };
 		04DE571F1D6FD2F9003F44F1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE571A1D6FD2F9003F44F1 /* MBProgressHUD.m */; };
 		04DE57221D70239B003F44F1 /* SFBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57211D70239B003F44F1 /* SFBlurView.m */; };
+		04DE57251D702786003F44F1 /* SFSettingBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57241D702786003F44F1 /* SFSettingBaseController.m */; };
+		04DE572C1D702AA2003F44F1 /* SFPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE572B1D702AA2003F44F1 /* SFPushViewController.m */; };
 		04F901011D448FFE00CCB15E /* SFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F901001D448FFE00CCB15E /* SFNavigationController.m */; };
 		04F901051D44A41800CCB15E /* UIImage+SFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F901041D44A41800CCB15E /* UIImage+SFImage.m */; };
 		04F901091D45133D00CCB15E /* SFCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F901081D45133D00CCB15E /* SFCover.m */; };
@@ -127,6 +129,10 @@
 		04DE571A1D6FD2F9003F44F1 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		04DE57201D70239B003F44F1 /* SFBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBlurView.h; sourceTree = "<group>"; };
 		04DE57211D70239B003F44F1 /* SFBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBlurView.m; sourceTree = "<group>"; };
+		04DE57231D702786003F44F1 /* SFSettingBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSettingBaseController.h; sourceTree = "<group>"; };
+		04DE57241D702786003F44F1 /* SFSettingBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSettingBaseController.m; sourceTree = "<group>"; };
+		04DE572A1D702AA2003F44F1 /* SFPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPushViewController.h; sourceTree = "<group>"; };
+		04DE572B1D702AA2003F44F1 /* SFPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPushViewController.m; sourceTree = "<group>"; };
 		04F900FF1D448FFE00CCB15E /* SFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFNavigationController.h; sourceTree = "<group>"; };
 		04F901001D448FFE00CCB15E /* SFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFNavigationController.m; sourceTree = "<group>"; };
 		04F901031D44A41800CCB15E /* UIImage+SFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SFImage.h"; sourceTree = "<group>"; };
@@ -506,6 +512,7 @@
 		04CA492F1D62FC4D004C2D7B /* Setting(设置) */ = {
 			isa = PBXGroup;
 			children = (
+				04DE57261D702A6C003F44F1 /* Push(推送) */,
 				04CA49301D62FC4D004C2D7B /* Controller */,
 				04CA49311D62FC4D004C2D7B /* Model */,
 				04CA49321D62FC4D004C2D7B /* View */,
@@ -518,6 +525,8 @@
 			children = (
 				04DE56FB1D6EE0B7003F44F1 /* SFSetteingController.h */,
 				04DE56FC1D6EE0B7003F44F1 /* SFSetteingController.m */,
+				04DE57231D702786003F44F1 /* SFSettingBaseController.h */,
+				04DE57241D702786003F44F1 /* SFSettingBaseController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -594,6 +603,39 @@
 				04DE571A1D6FD2F9003F44F1 /* MBProgressHUD.m */,
 			);
 			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		04DE57261D702A6C003F44F1 /* Push(推送) */ = {
+			isa = PBXGroup;
+			children = (
+				04DE57271D702A6C003F44F1 /* Controller */,
+				04DE57281D702A6C003F44F1 /* Model */,
+				04DE57291D702A6C003F44F1 /* View */,
+			);
+			path = "Push(推送)";
+			sourceTree = "<group>";
+		};
+		04DE57271D702A6C003F44F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04DE572A1D702AA2003F44F1 /* SFPushViewController.h */,
+				04DE572B1D702AA2003F44F1 /* SFPushViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04DE57281D702A6C003F44F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04DE57291D702A6C003F44F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		04F901021D44A3F300CCB15E /* Category */ = {
@@ -698,6 +740,8 @@
 				04CA492E1D62F8BB004C2D7B /* SFSaveTools.m in Sources */,
 				0415DC441D43BBE0001E29CC /* SFHallViewController.m in Sources */,
 				0415DC4A1D43BC62001E29CC /* SFArenaViewController.m in Sources */,
+				04DE572C1D702AA2003F44F1 /* SFPushViewController.m in Sources */,
+				04DE57251D702786003F44F1 /* SFSettingBaseController.m in Sources */,
 				0415DC3E1D43BA70001E29CC /* main.m in Sources */,
 				04DE57001D6EE2B6003F44F1 /* SFSettingItem.m in Sources */,
 				0415DC571D43C8D8001E29CC /* SFTabBar.m in Sources */,

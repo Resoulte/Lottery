@@ -8,28 +8,19 @@
 
 #import "SFSetteingController.h"
 #import "SFSettingArrowItem.h"
-#import "SFSettingSwitchItem.h"
 #import "SFSettingGroupItem.h"
-#import "SFSettingCell.h"
+#import "SFSettingSwitchItem.h"
 #import "SFBlurView.h"
 #import "MBProgressHUD+XMG.h"
+#import "SFPushViewController.h"
 
-@interface SFSetteingController () <UITableViewDataSource>
+@interface SFSetteingController () <UITableViewDataSource, UITableViewDelegate>
 
-/**记录所有数组总数*/
-@property (strong, nonatomic) NSMutableArray *groupArray;
 
 @end
 
 @implementation SFSetteingController
 
-- (NSMutableArray *)groupArray {
-
-    if (!_groupArray) {
-        _groupArray = [NSMutableArray array];
-    }
-    return _groupArray;
-}
 
 - (instancetype)init {
 
@@ -49,6 +40,8 @@
 - (void)group0 {
 
     SFSettingArrowItem *redeemCodem = [SFSettingArrowItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    redeemCodem.destVC = [UIViewController class];
+    
    // 当前组有多少行
     NSArray *item = @[redeemCodem];
     SFSettingGroupItem *groupItem = [SFSettingGroupItem items:item];
@@ -59,11 +52,13 @@
 
 - (void)group1 {
     
-    SFSettingArrowItem *redeemCodem = [SFSettingArrowItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    SFSettingArrowItem *push = [SFSettingArrowItem itemImage:[UIImage imageNamed:@"MorePush"] title:@"推送和提醒"];
+    push.destVC = [SFPushViewController class];
+    
     SFSettingSwitchItem *redeemCodem1 = [SFSettingSwitchItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
     SFSettingSwitchItem *redeemCodem2 = [SFSettingSwitchItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
     SFSettingSwitchItem *redeemCodem3 = [SFSettingSwitchItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
-    NSArray *item = @[redeemCodem, redeemCodem1, redeemCodem2, redeemCodem3];
+    NSArray *item = @[push, redeemCodem1, redeemCodem2, redeemCodem3];
     SFSettingGroupItem *groupItem = [SFSettingGroupItem items:item];
     
     [self.groupArray addObject:groupItem];
@@ -94,57 +89,4 @@
 }
 
 
-#pragma mark - UITableViewDataSource
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
-    return self.groupArray.count;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // 取出时哪一组
-    SFSettingGroupItem *groupItem = self.groupArray[section];
-    return groupItem.items.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    // 快速创建cell
-    SFSettingCell *cell = [SFSettingCell cellWithTableView:tableView style:UITableViewCellStyleValue1];
-    
-    // 取出哪一组
-    SFSettingGroupItem *groupItem = self.groupArray[indexPath.section];
-    // 取出哪一行
-    SFSettingItem *item = groupItem.items[indexPath.row];
-    
-    cell.item = item;
-    
-    return cell;
-    
-}
-
-// 返回头部标题
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    // 取出哪一组
-    SFSettingGroupItem *groupItem = self.groupArray[section];
-    
-    return groupItem.headTitle;
-        
-}
-
-// 返回尾部标题
-- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
-    // 取出哪一组
-    SFSettingGroupItem *groupItem = self.groupArray[section];
-    
-    return groupItem.footTitle;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-
-    SFSettingGroupItem *groupItem = self.groupArray[indexPath.section];
-    SFSettingItem *item = groupItem.items[indexPath.row];
-    if (item.cellOperationBlock) {
-        item.cellOperationBlock();
-    }
-}
 @end
