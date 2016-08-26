@@ -37,6 +37,15 @@
 		04DE56FD1D6EE0B7003F44F1 /* SFSetteingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE56FC1D6EE0B7003F44F1 /* SFSetteingController.m */; };
 		04DE57001D6EE2B6003F44F1 /* SFSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE56FF1D6EE2B6003F44F1 /* SFSettingItem.m */; };
 		04DE57031D6F391E003F44F1 /* SFSettingGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57021D6F391E003F44F1 /* SFSettingGroupItem.m */; };
+		04DE57061D6F4760003F44F1 /* SFSettingArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57051D6F4760003F44F1 /* SFSettingArrowItem.m */; };
+		04DE57091D6F477D003F44F1 /* SFSettingSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57081D6F477D003F44F1 /* SFSettingSwitchItem.m */; };
+		04DE570C1D6F47EF003F44F1 /* SFSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE570B1D6F47EF003F44F1 /* SFSettingCell.m */; };
+		04DE571B1D6FD2F9003F44F1 /* DRNRealTimeBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57121D6FD2F9003F44F1 /* DRNRealTimeBlurView.m */; };
+		04DE571C1D6FD2F9003F44F1 /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57141D6FD2F9003F44F1 /* UIImage+BoxBlur.m */; };
+		04DE571D1D6FD2F9003F44F1 /* MBProgressHUD+XMG.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57171D6FD2F9003F44F1 /* MBProgressHUD+XMG.m */; };
+		04DE571E1D6FD2F9003F44F1 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57181D6FD2F9003F44F1 /* MBProgressHUD.bundle */; };
+		04DE571F1D6FD2F9003F44F1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE571A1D6FD2F9003F44F1 /* MBProgressHUD.m */; };
+		04DE57221D70239B003F44F1 /* SFBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57211D70239B003F44F1 /* SFBlurView.m */; };
 		04F901011D448FFE00CCB15E /* SFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F901001D448FFE00CCB15E /* SFNavigationController.m */; };
 		04F901051D44A41800CCB15E /* UIImage+SFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F901041D44A41800CCB15E /* UIImage+SFImage.m */; };
 		04F901091D45133D00CCB15E /* SFCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F901081D45133D00CCB15E /* SFCover.m */; };
@@ -101,6 +110,23 @@
 		04DE56FF1D6EE2B6003F44F1 /* SFSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSettingItem.m; sourceTree = "<group>"; };
 		04DE57011D6F391E003F44F1 /* SFSettingGroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSettingGroupItem.h; sourceTree = "<group>"; };
 		04DE57021D6F391E003F44F1 /* SFSettingGroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSettingGroupItem.m; sourceTree = "<group>"; };
+		04DE57041D6F4760003F44F1 /* SFSettingArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSettingArrowItem.h; sourceTree = "<group>"; };
+		04DE57051D6F4760003F44F1 /* SFSettingArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSettingArrowItem.m; sourceTree = "<group>"; };
+		04DE57071D6F477D003F44F1 /* SFSettingSwitchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSettingSwitchItem.h; sourceTree = "<group>"; };
+		04DE57081D6F477D003F44F1 /* SFSettingSwitchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSettingSwitchItem.m; sourceTree = "<group>"; };
+		04DE570A1D6F47EF003F44F1 /* SFSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSettingCell.h; sourceTree = "<group>"; };
+		04DE570B1D6F47EF003F44F1 /* SFSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSettingCell.m; sourceTree = "<group>"; };
+		04DE57111D6FD2F9003F44F1 /* DRNRealTimeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRNRealTimeBlurView.h; sourceTree = "<group>"; };
+		04DE57121D6FD2F9003F44F1 /* DRNRealTimeBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRNRealTimeBlurView.m; sourceTree = "<group>"; };
+		04DE57131D6FD2F9003F44F1 /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
+		04DE57141D6FD2F9003F44F1 /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
+		04DE57161D6FD2F9003F44F1 /* MBProgressHUD+XMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+XMG.h"; sourceTree = "<group>"; };
+		04DE57171D6FD2F9003F44F1 /* MBProgressHUD+XMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XMG.m"; sourceTree = "<group>"; };
+		04DE57181D6FD2F9003F44F1 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		04DE57191D6FD2F9003F44F1 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		04DE571A1D6FD2F9003F44F1 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		04DE57201D70239B003F44F1 /* SFBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBlurView.h; sourceTree = "<group>"; };
+		04DE57211D70239B003F44F1 /* SFBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBlurView.m; sourceTree = "<group>"; };
 		04F900FF1D448FFE00CCB15E /* SFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFNavigationController.h; sourceTree = "<group>"; };
 		04F901001D448FFE00CCB15E /* SFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFNavigationController.m; sourceTree = "<group>"; };
 		04F901031D44A41800CCB15E /* UIImage+SFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SFImage.h"; sourceTree = "<group>"; };
@@ -405,6 +431,7 @@
 		0415DC391D43BA70001E29CC /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				04DE570D1D6FD2F9003F44F1 /* Lib */,
 				04F901021D44A3F300CCB15E /* Category */,
 				0415DC3A1D43BA70001E29CC /* AppDelegate.h */,
 				0415DC3B1D43BA70001E29CC /* AppDelegate.m */,
@@ -500,6 +527,10 @@
 			children = (
 				04DE56FE1D6EE2B6003F44F1 /* SFSettingItem.h */,
 				04DE56FF1D6EE2B6003F44F1 /* SFSettingItem.m */,
+				04DE57041D6F4760003F44F1 /* SFSettingArrowItem.h */,
+				04DE57051D6F4760003F44F1 /* SFSettingArrowItem.m */,
+				04DE57071D6F477D003F44F1 /* SFSettingSwitchItem.h */,
+				04DE57081D6F477D003F44F1 /* SFSettingSwitchItem.m */,
 				04DE57011D6F391E003F44F1 /* SFSettingGroupItem.h */,
 				04DE57021D6F391E003F44F1 /* SFSettingGroupItem.m */,
 			);
@@ -509,8 +540,60 @@
 		04CA49321D62FC4D004C2D7B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04DE570A1D6F47EF003F44F1 /* SFSettingCell.h */,
+				04DE570B1D6F47EF003F44F1 /* SFSettingCell.m */,
+				04DE57201D70239B003F44F1 /* SFBlurView.h */,
+				04DE57211D70239B003F44F1 /* SFBlurView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		04DE570D1D6FD2F9003F44F1 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				04DE570E1D6FD2F9003F44F1 /* AMSmoothAlert */,
+				04DE57101D6FD2F9003F44F1 /* DRNRealTimeBlurView */,
+				04DE57151D6FD2F9003F44F1 /* MBProgressHUD */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		04DE570E1D6FD2F9003F44F1 /* AMSmoothAlert */ = {
+			isa = PBXGroup;
+			children = (
+				04DE570F1D6FD2F9003F44F1 /* assets */,
+			);
+			path = AMSmoothAlert;
+			sourceTree = "<group>";
+		};
+		04DE570F1D6FD2F9003F44F1 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		04DE57101D6FD2F9003F44F1 /* DRNRealTimeBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				04DE57111D6FD2F9003F44F1 /* DRNRealTimeBlurView.h */,
+				04DE57121D6FD2F9003F44F1 /* DRNRealTimeBlurView.m */,
+				04DE57131D6FD2F9003F44F1 /* UIImage+BoxBlur.h */,
+				04DE57141D6FD2F9003F44F1 /* UIImage+BoxBlur.m */,
+			);
+			path = DRNRealTimeBlurView;
+			sourceTree = "<group>";
+		};
+		04DE57151D6FD2F9003F44F1 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				04DE57161D6FD2F9003F44F1 /* MBProgressHUD+XMG.h */,
+				04DE57171D6FD2F9003F44F1 /* MBProgressHUD+XMG.m */,
+				04DE57181D6FD2F9003F44F1 /* MBProgressHUD.bundle */,
+				04DE57191D6FD2F9003F44F1 /* MBProgressHUD.h */,
+				04DE571A1D6FD2F9003F44F1 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		04F901021D44A3F300CCB15E /* Category */ = {
@@ -587,6 +670,7 @@
 				04CA48C01D5F78BC004C2D7B /* SFMyLotteryViewController.xib in Resources */,
 				0415DC161D43AF92001E29CC /* Assets.xcassets in Resources */,
 				04F9010E1D451A3000CCB15E /* SFActiveMenue.xib in Resources */,
+				04DE571E1D6FD2F9003F44F1 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,12 +685,16 @@
 				0415DC411D43BB27001E29CC /* SFTabBarController.m in Sources */,
 				04DE57031D6F391E003F44F1 /* SFSettingGroupItem.m in Sources */,
 				0415DC3D1D43BA70001E29CC /* AppDelegate.m in Sources */,
+				04DE57221D70239B003F44F1 /* SFBlurView.m in Sources */,
 				04CA472F1D5D934E004C2D7B /* UIView+SFFrame.m in Sources */,
 				04CA48BB1D5F5997004C2D7B /* SFTitleView.m in Sources */,
 				04C858181D46E8C800CD6E0A /* SFDownMenue.m in Sources */,
 				04F901051D44A41800CCB15E /* UIImage+SFImage.m in Sources */,
+				04DE57091D6F477D003F44F1 /* SFSettingSwitchItem.m in Sources */,
 				0415DC5A1D446F8C001E29CC /* SFBarButton.m in Sources */,
+				04DE571D1D6FD2F9003F44F1 /* MBProgressHUD+XMG.m in Sources */,
 				04F901011D448FFE00CCB15E /* SFNavigationController.m in Sources */,
+				04DE571B1D6FD2F9003F44F1 /* DRNRealTimeBlurView.m in Sources */,
 				04CA492E1D62F8BB004C2D7B /* SFSaveTools.m in Sources */,
 				0415DC441D43BBE0001E29CC /* SFHallViewController.m in Sources */,
 				0415DC4A1D43BC62001E29CC /* SFArenaViewController.m in Sources */,
@@ -616,6 +704,9 @@
 				04CA48B81D5F592C004C2D7B /* SFLuckyViewController.m in Sources */,
 				04DE56FD1D6EE0B7003F44F1 /* SFSetteingController.m in Sources */,
 				04CA491C1D61DD65004C2D7B /* SFNewfeatureController.m in Sources */,
+				04DE571F1D6FD2F9003F44F1 /* MBProgressHUD.m in Sources */,
+				04DE570C1D6F47EF003F44F1 /* SFSettingCell.m in Sources */,
+				04DE57061D6F4760003F44F1 /* SFSettingArrowItem.m in Sources */,
 				04C8581B1D46EA3100CD6E0A /* SFMenueItem.m in Sources */,
 				04CA491F1D61EDC1004C2D7B /* SFNewfeatureCell.m in Sources */,
 				04CA49271D62F698004C2D7B /* SFGuideTool.m in Sources */,
@@ -626,6 +717,7 @@
 				04CA48BE1D5F67EE004C2D7B /* SFLuckyBGView.m in Sources */,
 				04CA47D91D5ED2A4004C2D7B /* SFArenaNavController.m in Sources */,
 				04CA48B51D5F56C2004C2D7B /* SFGroupBuyViewController.m in Sources */,
+				04DE571C1D6FD2F9003F44F1 /* UIImage+BoxBlur.m in Sources */,
 				04F9010C1D451A1D00CCB15E /* SFActiveMenue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

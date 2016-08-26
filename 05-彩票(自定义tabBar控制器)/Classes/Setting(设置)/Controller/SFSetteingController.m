@@ -7,8 +7,12 @@
 //
 
 #import "SFSetteingController.h"
-#import "SFSettingItem.h"
+#import "SFSettingArrowItem.h"
+#import "SFSettingSwitchItem.h"
 #import "SFSettingGroupItem.h"
+#import "SFSettingCell.h"
+#import "SFBlurView.h"
+#import "MBProgressHUD+XMG.h"
 
 @interface SFSetteingController () <UITableViewDataSource>
 
@@ -44,7 +48,7 @@
 
 - (void)group0 {
 
-    SFSettingItem *redeemCodem = [SFSettingItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    SFSettingArrowItem *redeemCodem = [SFSettingArrowItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
    // 当前组有多少行
     NSArray *item = @[redeemCodem];
     SFSettingGroupItem *groupItem = [SFSettingGroupItem items:item];
@@ -55,8 +59,11 @@
 
 - (void)group1 {
     
-    SFSettingItem *redeemCodem = [SFSettingItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
-    NSArray *item = @[redeemCodem];
+    SFSettingArrowItem *redeemCodem = [SFSettingArrowItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    SFSettingSwitchItem *redeemCodem1 = [SFSettingSwitchItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    SFSettingSwitchItem *redeemCodem2 = [SFSettingSwitchItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    SFSettingSwitchItem *redeemCodem3 = [SFSettingSwitchItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    NSArray *item = @[redeemCodem, redeemCodem1, redeemCodem2, redeemCodem3];
     SFSettingGroupItem *groupItem = [SFSettingGroupItem items:item];
     
     [self.groupArray addObject:groupItem];
@@ -64,9 +71,23 @@
 
 - (void)group2 {
     
-    SFSettingItem *redeemCodem = [SFSettingItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    SFSettingArrowItem *version = [SFSettingArrowItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"检查新版本"];
+    
+    version.cellOperationBlock = ^(){
+        // 高斯模糊效果
+        SFBlurView *blur = [[SFBlurView alloc] initWithFrame:SFScreenBounds];
+        [SFKeyWindow addSubview:blur];
+        [MBProgressHUD showSuccess:@"当前没有最新版本"];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [blur removeFromSuperview];
+        });
+    };
+    
+    SFSettingArrowItem *redeemCodem1 = [SFSettingArrowItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    SFSettingArrowItem *redeemCodem2 = [SFSettingArrowItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    SFSettingArrowItem *redeemCodem3 = [SFSettingArrowItem itemImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
     // 当前组有多少行
-    NSArray *item = @[redeemCodem];
+    NSArray *item = @[version, redeemCodem1, redeemCodem2, redeemCodem3];
     SFSettingGroupItem *groupItem = [SFSettingGroupItem items:item];
     
     [self.groupArray addObject:groupItem];
@@ -86,19 +107,16 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *ID = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
-    }
+    
+    // 快速创建cell
+    SFSettingCell *cell = [SFSettingCell cellWithTableView:tableView style:UITableViewCellStyleValue1];
     
     // 取出哪一组
     SFSettingGroupItem *groupItem = self.groupArray[indexPath.section];
-    
     // 取出哪一行
     SFSettingItem *item = groupItem.items[indexPath.row];
-    cell.imageView.image = item.iconImage;
-    cell.textLabel.text = item.title;
+    
+    cell.item = item;
     
     return cell;
     
@@ -121,5 +139,12 @@
     return groupItem.footTitle;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
+    SFSettingGroupItem *groupItem = self.groupArray[indexPath.section];
+    SFSettingItem *item = groupItem.items[indexPath.row];
+    if (item.cellOperationBlock) {
+        item.cellOperationBlock();
+    }
+}
 @end

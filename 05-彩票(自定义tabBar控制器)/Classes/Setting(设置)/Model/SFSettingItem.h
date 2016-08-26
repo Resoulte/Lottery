@@ -16,6 +16,8 @@
 @property (copy, nonatomic) NSString *title;
 /**子标题*/
 @property (copy, nonatomic) NSString *subTitle;
+/**点击cell跳转的block*/
+@property (copy, nonatomic) void(^cellOperationBlock)();
 
 + (instancetype)itemImage:(UIImage *)image title:(NSString *)title;
 
