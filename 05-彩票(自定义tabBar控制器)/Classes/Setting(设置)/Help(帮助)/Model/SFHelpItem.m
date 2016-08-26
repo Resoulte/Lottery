@@ -7,13 +7,19 @@
 //
 
 #import "SFHelpItem.h"
+#import "NSObject+SFModel.h"
 
 @implementation SFHelpItem
 
 + (instancetype)itemWithDict:(NSDictionary *)dic {
-
     SFHelpItem *item = [[self alloc] init];
     [item setValuesForKeysWithDictionary:dic];
+//    //. kvc  遍历字典里所以得key去模型中找
+    
+//    SFHelpItem *item = [SFHelpItem objcWithDic:dic mapDict:@{@"ID" : @"id"}];
+    
+//    runtime
+    // 遍历模型中属性名去字典中找，如果找到就赋值
     
     return item;
 }

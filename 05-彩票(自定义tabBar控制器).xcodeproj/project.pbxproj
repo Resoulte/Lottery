@@ -82,6 +82,8 @@
 		04DE576F1D706879003F44F1 /* znzh.html in Resources */ = {isa = PBXBuildFile; fileRef = 04DE57521D706879003F44F1 /* znzh.html */; };
 		04DE57761D7068EA003F44F1 /* SFHelpItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57751D7068EA003F44F1 /* SFHelpItem.m */; };
 		04DE57791D7069C1003F44F1 /* SFSettingHelpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57781D7069C1003F44F1 /* SFSettingHelpController.m */; };
+		04DE577F1D707CA0003F44F1 /* NSObject+SFModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE577E1D707CA0003F44F1 /* NSObject+SFModel.m */; };
+		04DE57821D708B98003F44F1 /* SFSettingHtmlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE57811D708B98003F44F1 /* SFSettingHtmlController.m */; };
 		04F901011D448FFE00CCB15E /* SFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F901001D448FFE00CCB15E /* SFNavigationController.m */; };
 		04F901051D44A41800CCB15E /* UIImage+SFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F901041D44A41800CCB15E /* UIImage+SFImage.m */; };
 		04F901091D45133D00CCB15E /* SFCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F901081D45133D00CCB15E /* SFCover.m */; };
@@ -205,6 +207,10 @@
 		04DE57751D7068EA003F44F1 /* SFHelpItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHelpItem.m; sourceTree = "<group>"; };
 		04DE57771D7069C1003F44F1 /* SFSettingHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSettingHelpController.h; sourceTree = "<group>"; };
 		04DE57781D7069C1003F44F1 /* SFSettingHelpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSettingHelpController.m; sourceTree = "<group>"; };
+		04DE577D1D707CA0003F44F1 /* NSObject+SFModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SFModel.h"; sourceTree = "<group>"; };
+		04DE577E1D707CA0003F44F1 /* NSObject+SFModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SFModel.m"; sourceTree = "<group>"; };
+		04DE57801D708B98003F44F1 /* SFSettingHtmlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSettingHtmlController.h; sourceTree = "<group>"; };
+		04DE57811D708B98003F44F1 /* SFSettingHtmlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSettingHtmlController.m; sourceTree = "<group>"; };
 		04F900FF1D448FFE00CCB15E /* SFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFNavigationController.h; sourceTree = "<group>"; };
 		04F901001D448FFE00CCB15E /* SFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFNavigationController.m; sourceTree = "<group>"; };
 		04F901031D44A41800CCB15E /* UIImage+SFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SFImage.h"; sourceTree = "<group>"; };
@@ -768,6 +774,8 @@
 			children = (
 				04DE57771D7069C1003F44F1 /* SFSettingHelpController.h */,
 				04DE57781D7069C1003F44F1 /* SFSettingHelpController.m */,
+				04DE57801D708B98003F44F1 /* SFSettingHtmlController.h */,
+				04DE57811D708B98003F44F1 /* SFSettingHtmlController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -795,6 +803,8 @@
 				04F901041D44A41800CCB15E /* UIImage+SFImage.m */,
 				04CA472D1D5D934E004C2D7B /* UIView+SFFrame.h */,
 				04CA472E1D5D934E004C2D7B /* UIView+SFFrame.m */,
+				04DE577D1D707CA0003F44F1 /* NSObject+SFModel.h */,
+				04DE577E1D707CA0003F44F1 /* NSObject+SFModel.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -913,6 +923,7 @@
 				04C858181D46E8C800CD6E0A /* SFDownMenue.m in Sources */,
 				04F901051D44A41800CCB15E /* UIImage+SFImage.m in Sources */,
 				04DE57091D6F477D003F44F1 /* SFSettingSwitchItem.m in Sources */,
+				04DE57821D708B98003F44F1 /* SFSettingHtmlController.m in Sources */,
 				0415DC5A1D446F8C001E29CC /* SFBarButton.m in Sources */,
 				04DE571D1D6FD2F9003F44F1 /* MBProgressHUD+XMG.m in Sources */,
 				04F901011D448FFE00CCB15E /* SFNavigationController.m in Sources */,
@@ -920,6 +931,7 @@
 				04CA492E1D62F8BB004C2D7B /* SFSaveTools.m in Sources */,
 				0415DC441D43BBE0001E29CC /* SFHallViewController.m in Sources */,
 				0415DC4A1D43BC62001E29CC /* SFArenaViewController.m in Sources */,
+				04DE577F1D707CA0003F44F1 /* NSObject+SFModel.m in Sources */,
 				04DE572C1D702AA2003F44F1 /* SFPushViewController.m in Sources */,
 				04DE57251D702786003F44F1 /* SFSettingBaseController.m in Sources */,
 				0415DC3E1D43BA70001E29CC /* main.m in Sources */,

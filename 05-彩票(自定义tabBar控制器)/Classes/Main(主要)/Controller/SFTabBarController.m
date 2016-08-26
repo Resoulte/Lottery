@@ -79,7 +79,7 @@
     
     // 竞技场
     SFArenaViewController *arena = [[SFArenaViewController alloc] init];
-    [self setupOneViewController:arena image:[UIImage imageNamed:@"TabBar_Arena_new"] selectedImage:[UIImage imageNamed:@"TabBar_Arena_selected_new"] title:nil];
+    [self setupOneViewController:arena image:[UIImage imageNamed:@"TabBar_Arena_new"] selectedImage:[UIImage imageNamed:@"TabBar_Arena_selected_new"] title:@"竞技场"];
     
     // 发现
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"SFDiscoverViewController" bundle:nil];

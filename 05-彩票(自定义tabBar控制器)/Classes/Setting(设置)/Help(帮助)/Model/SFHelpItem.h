@@ -17,6 +17,7 @@
 /**id*/
 @property (copy, nonatomic) NSString *ID;
 
-+ (instancetype)itemWithDict:(NSDictionary *)dic;
+// 快速进行字典转模型
 
++ (instancetype)itemWithDict:(NSDictionary *)dic; 
 @end

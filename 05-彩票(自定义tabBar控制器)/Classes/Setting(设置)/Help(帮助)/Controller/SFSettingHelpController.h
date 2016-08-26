@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SFSettingHelpController : UIViewController
+@interface SFSettingHelpController : UITableViewController
 
 @end

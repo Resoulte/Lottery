@@ -8,6 +8,8 @@
 
 #import "SFSettingHelpController.h"
 #import "SFHelpItem.h"
+#import "SFSettingHtmlController.h"
+#import "SFNavigationController.h"
 
 @interface SFSettingHelpController ()
 
@@ -18,6 +20,10 @@
 
 @implementation SFSettingHelpController
 
+- (instancetype)init {
+
+    return [super initWithStyle:UITableViewStyleGrouped];
+}
 
 - (NSMutableArray *)itemArray {
 
@@ -35,6 +41,48 @@
     return _itemArray;
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
+    
+}
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+
+    return self.itemArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    static NSString *ID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+    }
+    
+    SFHelpItem *item = self.itemArray[indexPath.row];
+    cell.textLabel.text = item.title;
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    SFHelpItem *item = self.itemArray[indexPath.row];
+    
+    SFSettingHtmlController *html = [[SFSettingHtmlController alloc] init];
+    html.title = item.title;
+    html.htmlItem = item;
+    SFNavigationController *nav = [[SFNavigationController alloc] initWithRootViewController:html];
+    
+    [self presentViewController:nav animated:YES completion:nil];
+    
+}
 
 @end
